@@ -77,7 +77,7 @@ arch-cli deploy --network testnet --rpc-url http://localhost:9002
 ```
 
 ### Connecting the Smart Contract on the Backend
-To serialize all data, sign it using the Arch Account, and send it to the smart contract, follow this example:
+After serialize all data, sign it using the Arch Account, and send it to the smart contract, follow this example:
 
 ```
 const messageHash = MessageUtil.hash(messageObj);
@@ -103,6 +103,7 @@ for (let i = 0; i < MAX_RETRIES; i++) {
     }
 }
 ```
+If you do not sign use Arch Program account use Arch Account, program will reject request.
 
 ## Languages Used
 - Rust
