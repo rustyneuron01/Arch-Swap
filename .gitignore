@@ -1,0 +1,5 @@
+/program/target
+/app/program/target
+/app/frontend/node_modules
+/backend/backend/node_modules
+/backend/backend/.env

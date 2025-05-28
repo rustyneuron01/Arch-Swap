@@ -1,0 +1,34 @@
+[package]
+name = "common"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+#sdk = { path = "../../sdk" }
+arch_program = { path = "../program" }
+bitcoincore-rpc = "0.18.0"
+bitcoin = { version = "0.31.0", features = ["serde", "rand"] }
+rand_core = { version = "0.6.4", features = ["getrandom"] }
+reqwest = { version = "0.12", default-features = false, features = [
+  "json",
+  "rustls-tls",
+  "blocking",
+] }
+serde_json = "1.0.116"
+serde = { version = "1.0.198", features = ["derive"] }
+sha256 = "1.5.0"
+anyhow = "1.0.82"
+borsh = { version = "1.4.0", features = ["derive"] }
+hex = "0.4.3"
+env_logger = "0.10"
+futures = "0.3.30"
+colored = "2.0"
+config = "0.13"
+indicatif = "0.17.8"
+bip322 = "0.0.7"
+tokio = { version = "1.32.0", features = ["full"] }
+log = "0.4.22"
+proptest = "1.1.2"
+
+[dev-dependencies]
+serial_test = "3.1.1"
